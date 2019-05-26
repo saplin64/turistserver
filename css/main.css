@@ -1,0 +1,141 @@
+body {
+  background: url("/img/one.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.container {
+  width: 450px;
+  height: 220px;
+  background-color: rgba(100, 100, 101, 0.21);
+  margin: 350px auto 0 auto;
+  text-align: center;
+  border : 1px solid white;
+}
+
+.container-2 {
+  width: 450px;
+  max-height: 1200px;
+  background-color: rgba(100, 100, 101, 0.21);
+  margin: 350px auto 0 auto;
+  text-align: center;
+  border : 1px solid white;
+}
+
+legend {
+  font-size: 2.4em;
+  margin: auto;
+  color: white;
+}
+
+label {
+  font-size: 1em;
+  color: white;
+}
+
+input[type="text"] {
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  padding-left: 40px;
+  background-color: rgba(8, 25, 60, 0.56);
+  border : 2px solid white;
+  color: white;
+}
+
+.input-box {
+  width: 100px;
+  text-align: left;
+  padding-left: 100px;
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border : 3px solid white;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background-color: rgba(57, 55, 48, 0.43);
+  color: white;
+}
+
+.submit-box {
+  padding: 13px 30px;
+  margin: 5px 0 5px 0;
+  font-size: 15px;
+  color: #fff;
+  background-color: rgba(#292b2b, 0.15);
+  border: none;
+  cursor: pointer;
+}
+
+h3 {
+  color: #ced6db;
+  font-size: 3em;
+  margin: auto;
+}
+
+a {
+  font-size: 1.8em;
+  color: white;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 120px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #BA86FE;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px;
+  margin: 0 30px;
+}
+}

@@ -1,0 +1,5 @@
+User-agent:*
+Disallow:
+Crawl-delay: 3
+Host: https://mysuit.azurewebsites.net
+Clean-param: ref /class/info/get_data.json
